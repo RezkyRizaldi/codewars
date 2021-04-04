@@ -1,11 +1,11 @@
 //* parseInt() function
 // function litres(time) {
-//     return parseInt(time / 2);
+//   return parseInt(time / 2);
 // }
 
 //* Math method
 function litres(time) {
-    return Math.floor(time * 0.5);
+  return Math.floor(time * 0.5);
 }
 
 //* Bitwise Operator

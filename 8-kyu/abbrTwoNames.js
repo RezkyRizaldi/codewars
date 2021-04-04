@@ -1,10 +1,10 @@
 //* Higher Order Function
 function abbrevName(name) {
-    return name
-        .toUpperCase()
-        .split(" ")
-        .map((n) => n[0])
-        .join(".");
+  return name
+    .toUpperCase()
+    .split(" ")
+    .map((n) => n[0])
+    .join(".");
 }
 
 //* Regex
