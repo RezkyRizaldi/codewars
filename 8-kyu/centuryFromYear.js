@@ -1,4 +1,19 @@
-//* Math method
+//* Basic Algorithm
+// function century(year) {
+//     var century = 0;
+
+//     for (var i = 0; i < year; i++) {
+//         if (i % 100 == 0) {
+//             century++;
+//         }
+//     }
+//     return century;
+// }
+
+//* parseInt() function
+// const century = (year) => (year % 100 === 0 ? parseInt(year / 100) : parseInt(year / 100) + 1);
+
+// * Math method
 const century = (year) => Math.ceil(year / 100);
 
 console.log(`Answer: ${century(1705)}`, `Result: ${18}`); // If year has exceeded the value of hundreds, +1 century

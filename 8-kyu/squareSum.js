@@ -26,7 +26,7 @@
 // };
 
 //* Higher Order Function
-const squareSum = (nums) => nums.reduce((acc, n) => acc + n * n);
+const squareSum = (nums) => nums.reduce((acc, n) => acc + n * n, 0);
 
 console.log(`Answer: ${squareSum([1, 2])}`, `Result: ${5}`); // (1 * 1) + (2 * 2)
 console.log(`Answer: ${squareSum([0, 3, 4, 5])}`, `Result: ${50}`); // (0 * 0) + (3 * 3) + (4 * 4) + (5 * 5)
