@@ -9,13 +9,13 @@ function sumArray(array) {
   //* Ternary
   // return array
   //   ? array
-  //       .sort((x, y) => x - y)
+  //       .sort((a, b) => a - b)
   //       .slice(1, -1)
-  //       .reduce((s, e) => s + e, 0)
+  //       .reduce((acc, curr) => acc + curr, 0)
   //   : 0;
 
   //* Math method
-  // return array ? array.reduce((s, n) => s + n, 0) - Math.min(...array) - Math.max(...array) : 0;
+  // return array ? array.reduce((acc, curr) => acc + curr, 0) - Math.min(...array) - Math.max(...array) : 0;
 }
 
 console.log(`Answer: ${sumArray([6, 2, 1, 8, 10])}`, `Result: ${16}`);
