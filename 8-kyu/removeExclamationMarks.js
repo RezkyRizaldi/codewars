@@ -1,11 +1,19 @@
-//^ String.prototype.split("") & Array.prototype.join("")
-function removeExclamationMarks(s) {
-  return s.split("!").join("");
+function remove(s) {
+  //* String.prototype.charAt()
+  // return s.charAt(s.length - 1) === "!" ? s.slice(0, -1) : s;
+
+  //* String.prototype.endsWith()
+  return s.endsWith("!") ? s.slice(0, -1) : s;
 }
 
 //* Regex
-function removeExclamationMarks(s) {
-  return s.replace(/!/g, "");
-}
+// function remove(s) {
+//   return s.replace(/!$/, "");
+// }
 
-console.log(`Answer: ${removeExclamationMarks("Hello World!")}`, "Result: Hello World");
+console.log(`Answer: ${remove("Hi!")}`, "Result: Hi");
+console.log(`Answer: ${remove("Hi!!!")}`, "Result: Hi!!");
+console.log(`Answer: ${remove("!Hi")}`, "Result: !Hi");
+console.log(`Answer: ${remove("!Hi!")}`, "Result: !Hi");
+console.log(`Answer: ${remove("Hi! Hi!")}`, "Result: Hi! Hi");
+console.log(`Answer: ${remove("Hi")}`, "Result: Hi");
